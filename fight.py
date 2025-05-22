@@ -1,3 +1,5 @@
+import random
+
 class FightModel:
     def __init__(self, hero, enemy, logger=None):
         self.hero = hero
