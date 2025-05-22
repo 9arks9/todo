@@ -3,6 +3,7 @@ from characters import Hero, Enemy
 from fight import FightModel
 from inventory import Weapon
 
+# ===================== MAIN =====================
 def main():
     # Hero initialization
     # Hero name, hp, attack, defence, level
@@ -20,14 +21,27 @@ def main():
     skeleton = Enemy('Skeleton', 40, 5, 3, 1)    #index 7 in list
     goblin = Enemy('Goblin', 60, 2, 10, 1)       #index 8 in list
 
-    # Przykładowy przeciwnik
+   ########################################################
+#  _______ ______  _____ _______   __________  _   _ ______  #
+# |__   __|  ____|/ ____|__   __| |___  / __ \| \ | |  ____| #
+#    | |  | |__  | (___    | |       / / |  | |  \| | |__    #
+#    | |  |  __|  \___ \   | |      / /| |  | | . ` |  __|   #
+#    | |  | |____ ____) |  | |     / /_| |__| | |\  | |____  #
+#    |_|  |______|_____/   |_|    /_____\____/|_| \_|______| #
+#                                                            #
+   ########################################################
+                                                           
+                                                           
+
+    #
+    # randomly select an enemy from the list
     roll = random.randint(0, 8)
     enemy = Enemy.all_monsters[roll]
     #enemy.level_up_monster(1)
 
-    # Wynik walki
+    # Fight initialization
     #for i in range(30):
-    fight = FightModel(my_hero, enemy)
+    fight = FightModel(my_hero, enemy) # figh_dungeon, figh_pvp, fight_raid
     print(fight.run())
 
     # Weapon initialization
