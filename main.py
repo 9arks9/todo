@@ -1,5 +1,7 @@
 import random
 from characters import Hero, Enemy
+from fight import FightModel
+from inventory import Weapon
 
 def main():
     # Hero initialization
