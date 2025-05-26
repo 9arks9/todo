@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Test task",
+        "description": "This is a test.",
+        "done": false,
+        "creation_date": "[2025-05-26][17:56]",
+        "progress_txt": "-[ ]-"
+    },
+    {
+        "title": "Test task",
+        "description": "This is a test.",
+        "done": true,
+        "creation_date": "[2025-05-26][18:00]",
+        "progress_txt": "-[\u2714]-"
+    },
+    {
+        "title": "Test task",
+        "description": "This is a test.",
+        "done": false,
+        "creation_date": "[2025-05-26][17:58]",
+        "progress_txt": "-[ ]-"
+    }
+]
